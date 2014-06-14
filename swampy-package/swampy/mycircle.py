@@ -3,14 +3,14 @@ from math import *
 world = TurtleWorld()
 bob = Turtle()
 print bob
-bob.delay=0.08
+bob.delay=0.02
 
 def polygon(t,length,n):
 	t=Turtle()
 	#t.delay = (0.01)
 	for iiiii in range(n):
 		fd(t,length)
-		lt(t, 360.0/n)
+		lt(t, 360/n)
 polygon(bob, 50, 8)
 
 world.clear()
@@ -29,12 +29,12 @@ wait_for_user()
 """
 #from math import *
 def circle(t,r):
-	t = Turtle()
-	circumference = 2 * pi * r
+	#t = Turtle()
+	circum = 2 * pi * r
 	n = 50 
-	length = circumference / n
-	polygon(t,n,length)		
-circle(bob,20)
+	length = circum / n
+	polygon(t,length,n)		
+circle(bob,100)
 
 
 wait_for_user()
